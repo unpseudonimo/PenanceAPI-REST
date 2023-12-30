@@ -1,0 +1,40 @@
+###
+GET http://localhost:3000/admin/getAdmins HTTP/1.1
+
+###
+POST http://localhost:3000/admin/createAdmin HTTP/1.1
+Content-Type: application/json
+
+{
+    "noEmployee": "998852345",
+    "name": "Pepe Pollas",
+    "email": "pepe@galle.com",
+    "password": "elsuperpollo"
+}
+
+###
+PUT http://localhost:3000/admin/updateAdmin/123456790 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "doe@galle.com",
+    "password": "password"
+}
+
+###
+DELETE http://localhost:3000/admin/deleteAdmin/123456789 HTTP/1.1
+
+
+###
+GET http://localhost:3000/admin/getAdmin/90054432 HTTP/1.1
+
+###
+POST http://localhost:3000/admin/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "noEmployee": "345636781",
+    "password": "password"
+}
+
