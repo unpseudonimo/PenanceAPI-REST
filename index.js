@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const db = require('./db');
 const adminRoutes = require('./controllers/controllerAdmin');
-const bookRoutes = require('./controllers/controllerBook');
+const bookRoutes = require('./controllers/controllerHomework');
 const userRoutes = require('./controllers/controllerUser');
 const sliderRoutes = require('./controllers/controllerSlider');
 
@@ -15,7 +15,7 @@ dotenv.config();
 app.use(bodyParser.json());
 
 app.use('/admin', adminRoutes);
-app.use('/book', bookRoutes);
+app.use('/homework', bookRoutes);
 app.use('/user', userRoutes);
 app.use('/slider', sliderRoutes);
 
